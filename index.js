@@ -1,132 +1,132 @@
 //Task1
-// function combine(lst1,lst2){
-//     let lst = [lst1,lst2];
+function combine(lst1,lst2){
+    let lst = [lst1,lst2];
 
-//     let all = [];
+    let all = [];
 
-//     lst.forEach(element => {
-//        element.forEach(current => {
-//            all.push(current);
-//        }); 
-//     });
-//     return all;
-// }
+    lst.forEach(element => {
+       element.forEach(current => {
+           all.push(current);
+       }); 
+    });
+    return all;
+}
 
-// let lst_1 = [1,2,3,4];
-// let lst_2 = [5,6,7,8,9];
+let lst_1 = [1,2,3,4];
+let lst_2 = [5,6,7,8,9];
 
-// let all_lst = combine(lst_1,lst_2);
+let all_lst = combine(lst_1,lst_2);
 
-// console.log(all_lst);
+console.log(all_lst);
 
-// //Task2
+//Task2
 
-// function months(index){
-//     switch(index) {
-//         case 1:
-//           alert("Yanvar");
-//           break;
-//         case 2:
-//           alert("Fevral");
-//           break;
+function months(index){
+    switch(index) {
+        case 1:
+          alert("Yanvar");
+          break;
+        case 2:
+          alert("Fevral");
+          break;
         
-//         case 3:
-//             alert("Mart");
-//             break;
-//         case 4:
-//             alert("Aprel");
-//             break;
-//         case 5:
-//             alert("May");
-//             break;
-//         case 6:
-//             alert("Iyun");
-//             break;
-//         case 7:
-//             alert("Iyul");
-//             break;
+        case 3:
+            alert("Mart");
+            break;
+        case 4:
+            alert("Aprel");
+            break;
+        case 5:
+            alert("May");
+            break;
+        case 6:
+            alert("Iyun");
+            break;
+        case 7:
+            alert("Iyul");
+            break;
             
-//         case 8:
-//             alert("Avqust");
-//             break;
-//         case 9:
-//             alert("Sentiyabr");
-//             break;
-//         case 10:
-//             alert("Oktyabr");
-//             break;
-//         case 11:
-//             alert("Noyabr");
-//             break;
+        case 8:
+            alert("Avqust");
+            break;
+        case 9:
+            alert("Sentiyabr");
+            break;
+        case 10:
+            alert("Oktyabr");
+            break;
+        case 11:
+            alert("Noyabr");
+            break;
             
-//         case 12:
-//             alert("Dekabr");
-//             break;
+        case 12:
+            alert("Dekabr");
+            break;
 
-//         default:
-//           alert("Bele ay yoxdu")
-//     }
+        default:
+          alert("Bele ay yoxdu")
+    }
       
-// }
+}
 
-// months(Number(prompt(": ")));
+months(Number(prompt(": ")));
 
 
-// //Task3
+//Task3
 
-// function check(lst,number){
-//     if (number in lst) {
-//         console.log(true);
-//     } else {
-//         console.log(false);
-//     }
-// }
+function check(lst,number){
+    if (number in lst) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
 
-// check([1,2,3,4],2);
-// check([1,2,3,4],5);
+check([1,2,3,4],2);
+check([1,2,3,4],5);
 
 
 //Task4
 
-// function checkFactors(lst,nbr){
-//     let c = 0;
-//     lst.forEach(element => {
-//         if (nbr%element==0) {
+function checkFactors(lst,nbr){
+    let c = 0;
+    lst.forEach(element => {
+        if (nbr%element==0) {
             
-//         }else{
-//             c++;
-//             return false;
-//         }
+        }else{
+            c++;
+            return false;
+        }
         
-//     });
-//     if (c>0) {
-//         return false
-//     }
-//     return true;
+    });
+    if (c>0) {
+        return false
+    }
+    return true;
 
-// }
-
-
-// let a = checkFactors([1,2,4,6],24);
-// console.log(a);
+}
 
 
-// let b = checkFactors([1,2,4,15,6],24);
-// console.log(b);
+let a = checkFactors([1,2,4,6],24);
+console.log(a);
+
+
+let b = checkFactors([1,2,4,15,6],24);
+console.log(b);
 
 
 //Task5
 
-// function getSequence(number1,number2){
-//     let lst = [];
-//     for (let index = number1; index <= number2; index++) {
-//         lst.push(index);
-//     }
-//     return lst;
-// }
+function getSequence(number1,number2){
+    let lst = [];
+    for (let index = number1; index <= number2; index++) {
+        lst.push(index);
+    }
+    return lst;
+}
 
-// let newLst = getSequence(1,9);
-// console.log(newLst);
+let newLst = getSequence(1,9);
+console.log(newLst);
 
 
 //Task6
