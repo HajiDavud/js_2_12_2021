@@ -146,6 +146,9 @@ arr.push(15);
 console.log(arr);
 let newArr2 = arr.filter(item => item > 43);
 console.log(newArr2)
+arr.splice(3,0,45)
+
+
 
 
 for (let index = 3; index < arr.length; index++) {
